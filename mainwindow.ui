@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>779</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+    background-color: rgb(255,255,255);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="do_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Push new coords</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Put your meanings</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_points">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>371</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <row>
+     <property name="text">
+      <string>New raw</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>New col</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="close">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>360</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_columns">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>120</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Columns</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_raws">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>90</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Raws</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_random">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Random_Meanings</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sort_bubble">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>150</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Bubble_Sorting</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_error">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>350</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>      ERROR!! NOT DOUBLE MEANINGS      </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_min">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Min Value</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_average">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Average</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_max">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Max Value</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_res">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Result</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_qsort">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>190</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Qsort(Fast_sort)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_comb">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>230</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Comb_sort</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_gnome_sort">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>270</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Gnome_sort</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_bogosort">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>310</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+   background-color: rgb(221, 166, 87);
+    border: 1px solid black;
+}
+
+QPushButton:pressed{
+	ackground-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:1,
+								stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>Bogosort_(Monkey)</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
